@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Calculator</title>
+</head>
+<body>
+
+<h2>Loan EMI Calculator</h2>
+
+<input type="number" id="loanAmount" placeholder="Loan Amount"><br><br>
+<input type="number" id="interestRate" placeholder="Interest Rate (%)"><br><br>
+<input type="number" id="loanTerm" placeholder="Years"><br><br>
+
+<button onclick="calculate()">Calculate</button>
+
+<p id="result"></p>
+
+<br>
+<a href="index.html">Home</a>
+
+<script>
+function calculate() {
+    let P = +document.getElementById("loanAmount").value;
+    let r = +document.getElementById("interestRate").value / 12 / 100;
+    let n = +document.getElementById("loanTerm").value * 12;
+
+    let emi = (P * r * Math.pow(1 + r, n)) /
+              (Math.pow(1 + r, n) - 1);
+
+    document.getElementById("result").innerHTML =
+        "Monthly EMI: " + emi.toFixed(2);
+}
+</script>
+
+</body>
+</html>
