@@ -1,5 +1,5 @@
-# Advanced-bmi-calculator
-Bmi calculation made simple 
+# Advanced loan and emi calculator
+financial calculation made simple 
 <!DOCTYPE html>
 <html>
 <head>
