@@ -1,6 +1,5 @@
 # Advanced loan and emi calculator
 financial calculation made simple 
-<!DOCTYPE html>
 <html>
 <head>
     <title>Loan EMI Calculator</title>
